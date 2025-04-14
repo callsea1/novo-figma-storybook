@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-a11y",
     "@storybook/addon-viewport",
     "@storybook/addon-designs",
+    "@storybook/preset-create-react-app",
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -21,9 +22,6 @@ const config: StorybookConfig = {
   staticDirs: ["../public"],
   core: {
     builder: "@storybook/builder-webpack5",
-  },
-  output: {
-    path: "storybook-static",
   },
 };
 
